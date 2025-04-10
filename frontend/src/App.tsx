@@ -11,8 +11,7 @@ export default function ArtistGallery() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Replace 'http://localhost:8080/api/artists' with your actual backend API endpoint
-    fetch('http://localhost:8080/manalo/artists')
+    fetch('http://localhost:8080/manalo/personalities')
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
